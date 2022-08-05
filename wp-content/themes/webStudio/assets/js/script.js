@@ -23,3 +23,8 @@ function closeModal() {
 
 contactBtnElem.addEventListener('click', openModal);
 closeContactModalBtnElem.addEventListener('click', closeModal);
+
+const inputs = document.querySelectorAll('.form-field__input');
+inputs.forEach(elem => {
+  elem.setAttribute('aria-invalid', '');
+})
